@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "07 Node.js Challenge: Professional README Generator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "inquirer": "^10.1.2"
+    "inquirer": "^10.1.4"
   }
 }
