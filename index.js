@@ -55,16 +55,16 @@ const questions = [
   },
 ];
 
-// // // Function to generate README content
-// const generateREADME = (answers) => {
-//   let licenseBadge = '';
-//   let licenseNotice = '';
+// // Function to generate README content
+const generateREADME = (answers) => {
+  let licenseBadge = '';
+  let licenseNotice = '';
 
 
-// Generate License Badge and Notice
-const generateLicense = (license) => {
-    let licenseBadge = '';
-    let licenseNotice = '';
+// // Generate License Badge and Notice
+// const generateLicense = (license) => {
+//     let licenseBadge = '';
+//     let licenseNotice = '';
 
   // Determine the license badge and notice
   switch (answers.license) {
@@ -91,12 +91,12 @@ const generateLicense = (license) => {
   }
 
 //   //-------> ADDED
-  return { badge, notice };
-};
+//   return { badge, notice };
+// };
 
-//  Generate README Content
-const generateREADME = (answers) => {
-  const { badge, notice } = generateLicense(answers.license);
+// //  Generate README Content
+// const generateREADME = (answers) => {
+//   const { badge, notice } = generateLicense(answers.license);
 
 //   //------> ADDED
 
@@ -161,14 +161,14 @@ const init = async () => {
 // Prompt user for answers
 const answers = await inquirer.prompt(questions);
 
-//  // Generate README content
-//  const content = generateREADME(answers);
+ // Generate README content
+ const content = generateREADME(answers);
 
-// Generate license notice
-const licenseNotice = generateLicenseNotice(answers.license);
+// // Generate license notice
+// const licenseNotice = generateLicenseNotice(answers.license);
 
-// Generate README content
-const content = generateContent(answers, licenseNotice);
+// // Generate README content
+// const content = generateContent(answers, licenseNotice);
 
 // Write README file
 writeFile(content);
