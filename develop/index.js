@@ -55,7 +55,7 @@ const questions = [
   },
 ];
 
-// // Function to generate README content
+// Function to generate README content
 const generateREADME = (answers) => {
   let licenseBadge = '';
   let licenseNotice = '';
@@ -66,7 +66,7 @@ const generateREADME = (answers) => {
 //     let licenseBadge = '';
 //     let licenseNotice = '';
 
-  // Determine the license badge and notice
+  // The license badges
   switch (answers.license) {
     case 'MIT':
       licenseBadge = '![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)';
@@ -89,16 +89,6 @@ const generateREADME = (answers) => {
       licenseNotice = 'This project is not licensed.';
       break;
   }
-
-//   //-------> ADDED
-//   return { badge, notice };
-// };
-
-// //  Generate README Content
-// const generateREADME = (answers) => {
-//   const { badge, notice } = generateLicense(answers.license);
-
-//   //------> ADDED
 
   return `
 # ${answers.title}
@@ -149,7 +139,7 @@ const writeFile = (content) => {
   });
 };
 
-// Main function
+// Function
 const init = async () => {
   try {
     // Check if README.md already exists
@@ -163,12 +153,6 @@ const answers = await inquirer.prompt(questions);
 
  // Generate README content
  const content = generateREADME(answers);
-
-// // Generate license notice
-// const licenseNotice = generateLicenseNotice(answers.license);
-
-// // Generate README content
-// const content = generateContent(answers, licenseNotice);
 
 // Write README file
 writeFile(content);
