@@ -22,7 +22,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 5) A professional README.md file will be generated in the "generated" folder under root directory
 6) Open the README.md file from "generated" folder to view the generated content
 
-Provide instructions and examples for use. Include screenshots as needed.
+Instructions and examples for use down below:
+
+Screen Recording ---> https://drive.google.com/file/d/1n8NRqm_41VV-KK5nKM4g4vpPynQ1-4io/view?usp=drive_link
 
 ## Credits
 
@@ -62,4 +64,4 @@ Adding this industry standard [Contributor Covenant](https://www.contributor-cov
 4) then ran "node index.js" to test the app
 5) it asked for user's input and generated the README.md file
 6) it was tested on Mac OS
-7) here is a link to a video of testing the app ------------>
+7) here is a link to a video of testing the app ---> https://drive.google.com/file/d/1n8NRqm_41VV-KK5nKM4g4vpPynQ1-4io/view?usp=drive_link

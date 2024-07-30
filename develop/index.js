@@ -1,7 +1,3 @@
-// const inquirer = require('inquirer');
-// const fs = require('fs');
-
-// Importing using ES Modules syntax
 import fs from 'fs';
 import inquirer from 'inquirer';
 
@@ -55,16 +51,10 @@ const questions = [
   },
 ];
 
-// Function to generate README content
+// Generate README content
 const generateREADME = (answers) => {
   let licenseBadge = '';
   let licenseNotice = '';
-
-
-// // Generate License Badge and Notice
-// const generateLicense = (license) => {
-//     let licenseBadge = '';
-//     let licenseNotice = '';
 
   // The license badges
   switch (answers.license) {
@@ -128,7 +118,7 @@ If you have any questions about this project, please contact me:
   `;
 };
 
-// Function to write README file
+// Write README file
 const writeFile = (content) => {
   fs.writeFile('README.md', content, (err) => {
     if (err) {
